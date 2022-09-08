@@ -1,15 +1,26 @@
 from tkinter import *
+from PIL import ImageTk, Image
+
 
 root = Tk()
 root.title("Offensive Hacking")
 
-root.geometry("470x206")
+root.geometry("3200x956")
 root.config(bg = "#9fde99")              # Configure Background colour
 # root.config(bg = "#C0C0C0")              # Configure Background colour
 # root.config(bg = "#000080")              # Configure Background colour
-root.iconbitmap("C:/Users/abhir/Downloads/hacker_117746.ico")
+root.iconbitmap("hacker_117746.ico")
+# pip install Pillow
+# pip freeze
 
-
+my_img1 = ImageTk.PhotoImage(Image.open("1.jpg"))
+my_img2 = ImageTk.PhotoImage(Image.open("2.jpg"))
+my_img3 = ImageTk.PhotoImage(Image.open("3.jpg"))
+my_img4 = ImageTk.PhotoImage(Image.open("4.jpg"))
+my_img5 = ImageTk.PhotoImage(Image.open("5.jpg"))
+my_img5 = ImageTk.PhotoImage(Image.open("5.jpg"))
+my_label = Label(image=my_img)
+my_label.pack()
 
 
 
