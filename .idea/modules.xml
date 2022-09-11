@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../DigitalClock/.idea/DigitalClock.iml" filepath="$PROJECT_DIR$/../DigitalClock/.idea/DigitalClock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../FullRansomware/.idea/FullRansomware.iml" filepath="$PROJECT_DIR$/../FullRansomware/.idea/FullRansomware.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/LearnTkinter.iml" filepath="$PROJECT_DIR$/.idea/LearnTkinter.iml" />
     </modules>
   </component>
