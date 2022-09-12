@@ -5,21 +5,28 @@ from tkinter import messagebox
 root = Tk()
 root.title('Message Box')
 root.iconbitmap("Messages.ico")
-root.geometry("1440x970")
+root.geometry("740x570")
 root.config(bg = "#9fde99")              # Configure Background colour
-# my_label.grid(row=0, column=0, columnspan=3)
 
-# e = Entry(root, width=27, borderwidth=2, bg="White")
-# root.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
-
+# Exit Button
 button_exit = Button(root, text="Exit Program", command=root.quit)
-button_exit.grid(row=1, column=3, columnspan=5)
 button_exit.pack()
 
-button_exit1 = Button(root, text="Exit Program", command=root.quit)
-# button_exit1.grid(row=2, column=3)
-button_exit1.pack()
+# Types of Boxes: showinfo, showwarning, showerror, askquestion, askokcancel, askyesno
+def popup():
+    # messagebox.showinfo("This is my PopUp", "Hello World")
+    # messagebox.showwarning("This is my PopUp", "Hello World")
+    # messagebox.showerror("This is my PopUp", "Hello World")
+    # messagebox.askquestion("This is my PopUp", "Hello World")
+    # messagebox.askokcancel("This is my PopUp", "Hello World")
+    # messagebox.askyesno("This is my PopUp", "Hello World")
+    response = messagebox.askyesno("This is my PopUp", "Hello World")
+    Label(root, text=response).pack()
 
+    if response == 1:
+        Label(root, text="You Clicked Yes!").pack()
+    else:
+        Label(root, text="You Clicked No!").pack()
 
-
+Button(root, text= "Popup", command=popup).pack()
 root.mainloop()
