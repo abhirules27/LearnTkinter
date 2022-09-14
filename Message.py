@@ -20,10 +20,10 @@ def popup():
     # messagebox.askquestion("This is my PopUp", "Hello World")
     # messagebox.askokcancel("This is my PopUp", "Hello World")
     # messagebox.askyesno("This is my PopUp", "Hello World")
-    response = messagebox.askyesno("This is my PopUp", "Hello World")
+    response = messagebox.askquestion("This is my PopUp", "Hello World")
     Label(root, text=response).pack()
 
-    if response == 1:
+    if response == "yes":
         Label(root, text="You Clicked Yes!").pack()
     else:
         Label(root, text="You Clicked No!").pack()
